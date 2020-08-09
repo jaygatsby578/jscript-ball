@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="a1.css">
+<title>JavaScript Sample</title>
+<script src="./anime/lib/anime.min.js"></script>
+</head>
+<body>
+  <center>
+  <div class="wrapper">
+  <div class="square" id="elem"></div>
+</div>
+<script>
+var elem = document.getElementById('elem');
+  elem.addEventListener('click',function(){
+    anime({
+      targets: elem,
+      translateX:[
+        150,150,0,0
+      ],
+      translateY:[
+        0,150,150,0
+      ]
+    })              
+  })
+</script>
+</div>
+</center>
+</body>
+</html>
